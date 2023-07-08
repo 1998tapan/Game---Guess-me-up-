@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body{
+  display:flex;
+  background-color:#8ECAE6;
+  color:#fff;
+  height:100vh;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Raleway', sans-serif;
+  box-sizing:border-box;
+}
+#guess-container{
+  width:40%;
+  background-color:#023047;
+  padding:1em;
+  border-radius: 0.6em;
+/*   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;*/
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+ 
+}
+#guess-container h2{
+  text-align:center;
+  margin-bottom:1em;
+}
+#maxNum{
+  box-sizing:border-box;
+  width:100%;
+  height:2em;
+}
+#startBtn{
+  margin-top:1em;
+  margin-bottom:0.75em;
+  padding:0.5em 2em;
+  background-color:#219EBC;
+  color:#fff;
+  border-radius:16px;
+  border:1px solid #000;
+  transition:background-color 0.5s;
+}
+#msgLabel{
+  margin-top:0.5em;
+  display:block;
+  transition:transform 0.5s;
+}
+.response{
+  transform: translateX(20px);
+}
+
+@media (hover: hover) {
+  #startBtn:hover{
+    background-color:#0da8cd;
+    box-shadow: 0 0.5em 0.5em -0.4em #8ECAE6;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+  }
+}
+
+@media(max-width:900px) {
+  body{
+    overflow:hidden;
+  }
+  #guess-container{
+    width:75%;
+  }
+}
